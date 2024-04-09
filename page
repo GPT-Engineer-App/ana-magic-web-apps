@@ -1,0 +1,72 @@
+import { Button, Box, Heading, Text, Image, Flex, VStack } from "@chakra-ui/react";
+import { FaPlay, FaPause, FaRedo } from "react-icons/fa";
+
+const Index = () => {
+  return (
+    <Box>
+      {/* Navigation */}
+      <Box bg="black" py={4}>
+        <Flex maxW="7xl" mx="auto" align="center" justify="space-between">
+          <Heading color="white" size="lg">
+            Ana's Magical Web Apps
+          </Heading>
+          <Button colorScheme="blue">Buy Now</Button>
+        </Flex>
+      </Box>
+
+      {/* Hero Section */}
+      <Box bgImage="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxtYWdpY2FsJTIwd2ViJTIwYXBwJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3MTI2NDAwMzV8MA&ixlib=rb-4.0.3&q=80&w=1080" bgSize="cover" py={40}>
+        <VStack spacing={8} maxW="2xl" mx="auto" textAlign="center">
+          <Heading size="3xl">Introducing Ana's Magical Web Apps</Heading>
+          <Text fontSize="2xl">Revolutionize your business with our enchanting web solutions.</Text>
+          <Button size="lg" colorScheme="blue">
+            Buy Now
+          </Button>
+        </VStack>
+      </Box>
+
+      {/* Highlights Section */}
+      <Box bg="gray.100" py={20}>
+        <VStack spacing={20} maxW="7xl" mx="auto">
+          <Heading size="2xl">Highlights</Heading>
+
+          <Flex direction={["column", "row"]} align="center">
+            <Image src="https://images.unsplash.com/photo-1573689705959-7786e029b31e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxtYWdpY2FsJTIwd2ViJTIwYXBwJTIwZGFzaGJvYXJkfGVufDB8fHx8MTcxMjY0MDAzNXww&ixlib=rb-4.0.3&q=80&w=1080" maxW="500px" />
+            <Box ml={[0, 10]}>
+              <Heading size="xl">Enchanting User Experience</Heading>
+              <Text fontSize="lg">Captivate your users with a magical, intuitive interface.</Text>
+            </Box>
+          </Flex>
+
+          <Flex direction={["column", "row"]} align="center">
+            <Box mr={[0, 10]} order={[2, 1]}>
+              <Heading size="xl">Spellbinding Performance</Heading>
+              <Text fontSize="lg">Cast a spell on your customers with lightning-fast apps.</Text>
+            </Box>
+            <Image src="https://images.unsplash.com/photo-1573689705959-7786e029b31e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxmYXN0JTIwbWFnaWNhbCUyMHdlYiUyMGFwcHxlbnwwfHx8fDE3MTI2NDAwMzV8MA&ixlib=rb-4.0.3&q=80&w=1080" maxW="500px" order={[1, 2]} />
+          </Flex>
+
+          <Flex direction={["column", "row"]} align="center">
+            <Image src="https://images.unsplash.com/photo-1573689705959-7786e029b31e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxjdXN0b21pemFibGUlMjBtYWdpY2FsJTIwd2ViJTIwYXBwfGVufDB8fHx8MTcxMjY0MDAzNnww&ixlib=rb-4.0.3&q=80&w=1080" maxW="500px" />
+            <Box ml={[0, 10]}>
+              <Heading size="xl">Bespoke Sorcery</Heading>
+              <Text fontSize="lg">Tailor our apps to fit your unique brand of magic.</Text>
+            </Box>
+          </Flex>
+        </VStack>
+      </Box>
+
+      {/* Call to Action */}
+      <Box py={20}>
+        <VStack spacing={8} maxW="2xl" mx="auto" textAlign="center">
+          <Heading size="2xl">Ready to Unleash the Magic?</Heading>
+          <Button size="lg" colorScheme="blue">
+            Buy Ana's Magical Web Apps
+          </Button>
+        </VStack>
+      </Box>
+    </Box>
+  );
+};
+
+export default Index;
